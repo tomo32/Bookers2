@@ -16,3 +16,27 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+
+a {
+ text-decoration: none;
+}
+
+.container > a {
+ color: white;
+}
+
+.nav-item {
+ margin-right: 20px;
+}
+
+.nav-item > a {
+ color: white;
+}
+
+footer {
+ text-align: center;
+}
+
+.nav-item {
+ padding: 3px;
+}
