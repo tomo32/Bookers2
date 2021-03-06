@@ -5,9 +5,10 @@ class ApplicationController < ActionController::Base
     user_path(current_user.id)
   end
   
-  def after_sign_up_path_for(rasource)
+  def after_sign_up_path_for(resource)
     user_path(current_user.id)
   end
+  
   
   protected
   

@@ -1,0 +1,17 @@
+
+<!--User info部分-->
+    <h2>User info</h2>
+    <div class="image">
+      <%= attachment_image_tag user, :profile_image_id, :fill, 10, 10, format: 'jpeg', fallback: "no_image.jpg" %>
+    </div>
+    <table class="table">
+      <tr>
+        <th>name</th>
+        <th><%= current_user.name %></th>
+      </tr>
+      <tr>
+        <th>introduction</th>
+        <th><%= current_user.introduction %></th>
+      </tr>
+    </table>
+    <%= link_to 'Profile Setting', edit_user_path(current_user.id), class: "btn btn-outline-secondary w-100" %>
